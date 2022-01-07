@@ -1,0 +1,2 @@
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell input keyevent BACK
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell input keyevent BACK

@@ -1,0 +1,8 @@
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell dumpsys package com.netease.nie.yosemite
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell settings get secure default_input_method
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell ime list -a
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell am broadcast -a ADB_INPUT_TEXT --es msg '123'
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell am broadcast -a ADB_EDITOR_CODE --ei code 3
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell am broadcast -a ADB_INPUT_TEXT --es msg '标高452452'
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell am broadcast -a ADB_EDITOR_CODE --ei code 3
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell input keyevent BACK

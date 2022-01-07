@@ -1,0 +1,5 @@
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell input keyevent BACK
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minicap_server]b''
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [rotation_server]b''
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minitouch_server]b''
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell am force-stop com.netease.open.pocoservice

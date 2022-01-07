@@ -1,0 +1,1 @@
+DEBUG    /Users/yixia/pythonProject/AndroidTalk/log/log.txt:Asearch.py:40 数据异常test_02

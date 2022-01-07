@@ -1,0 +1,41 @@
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell ls -l /data/local/tmp/rotationwatcher.jar
+DEBUG    airtest.core.android.rotation:rotation.py:49 install_rotationwatcher skipped
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell app_process -Djava.class.path=/data/local/tmp/rotationwatcher.jar /data/local/tmp com.example.rotationwatcher.Main
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [rotation_server]b'0'
+INFO     airtest.core.android.rotation:rotation.py:151 update orientation None->0
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell wm size
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell getprop ro.sf.lcd_density
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell dumpsys SurfaceFlinger
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell getevent -p
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell getprop ro.product.cpu.abi
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell getprop ro.build.version.sdk
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell ls -l /data/local/tmp/minitouch
+DEBUG    airtest.core.android.touch_methods.minitouch:minitouch.py:53 install_minitouch skipped
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 forward --no-rebind tcp:12742 localabstract:minitouch_12742
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell /data/local/tmp/minitouch -n 'minitouch_12742' 2>&1
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minitouch_server]b'Note: device /dev/input/mice is not supported by libevdev'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minitouch_server]b'Type B touch device synaptics_dsx_i2c (1079x2159 with 10 contacts) detected on /dev/input/event2 (score 22535)'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minitouch_server]b'Connection established'
+DEBUG    airtest.core.android.touch_methods.minitouch:minitouch.py:144 minitouch header:b'v 1\n^ 10 1079 2159 0\n$ 29315\n'
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell ls /data/local/tmp/minicap
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell ls /data/local/tmp/minicap.so
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -v 2>&1
+DEBUG    airtest.core.android.cap_methods.minicap:minicap.py:80 version:5
+DEBUG    airtest.core.android.cap_methods.minicap:minicap.py:87 skip install minicap
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'airtest_minicap' -P 1080x2160@1080x2160/0 -s
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 forward --no-rebind tcp:19631 localabstract:minicap_19631
+DEBUG    airtest.core.android.adb:adb.py:147 /Users/yixia/pythonProject/androidmiaopai/venv/lib/python3.9/site-packages/airtest/core/android/static/adb/mac/adb -s 9523d12 shell LD_LIBRARY_PATH=/data/local/tmp /data/local/tmp/minicap -n 'minicap_19631' -P 1080x2160@1080x2160/0 -l 2>&1
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minicap_server]b'PID: 29353'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minicap_server]b'INFO: Using projection 1080x2160@1080x2160/0'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minicap_server]b'INFO: (external/MY_minicap/src/minicap_27.cpp:241) Creating SurfaceComposerClient'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minicap_server]b'INFO: (external/MY_minicap/src/minicap_27.cpp:244) Performing SurfaceComposerClient init check'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minicap_server]b'INFO: (external/MY_minicap/src/minicap_27.cpp:255) Creating virtual display'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minicap_server]b'INFO: (external/MY_minicap/src/minicap_27.cpp:261) Creating buffer queue'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minicap_server]b'INFO: (external/MY_minicap/src/minicap_27.cpp:264) Setting buffer options'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minicap_server]b'INFO: (external/MY_minicap/src/minicap_27.cpp:268) Creating CPU consumer'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minicap_server]b'INFO: (external/MY_minicap/src/minicap_27.cpp:272) Creating frame waiter'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minicap_server]b'INFO: (external/MY_minicap/src/minicap_27.cpp:276) Publishing virtual display'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minicap_server]b'INFO: (jni/minicap/JpgEncoder.cpp:64) Allocating 7052292 bytes for JPG encoder'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minicap_server]b'INFO: (jni/minicap/minicap.cpp:489) Server start'
+DEBUG    airtest.utils.nbsp:nbsp.py:37 [minicap_server]b'INFO: (jni/minicap/minicap.cpp:492) New client connection'
+DEBUG    airtest.core.android.cap_methods.minicap:minicap.py:241 (1, 24, 29353, 1080, 2160, 1080, 2160, 0, 2)
