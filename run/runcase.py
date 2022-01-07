@@ -1,5 +1,10 @@
-import pytest, os
+import pytest, os,sys
 from tools.tool import REPORT_PATH, TESTCASE_PATH
+
+BASE_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+sys.path.append(BASE_PATH)
+sys.path.append("/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages")
 
 if __name__ == '__main__':
 
