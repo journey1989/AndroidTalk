@@ -1,7 +1,7 @@
 from airtest.core.api import *
 import pytest, allure, os, random
 from poco.drivers.android.uiautomation import AndroidUiautomationPoco
-from tools.tool import REPORT_PATH, log
+from tools.tool import REPORT_PATH
 from commom.com import getScreenshots, upSwipe
 from faker import Faker
 
@@ -105,7 +105,7 @@ class TestMy(object):
         if poco('com.dubmic.talk:id/ivClose').exists():
             poco('com.dubmic.talk:id/ivClose').click()
         else:
-            log.error('有bug，房间结束弹窗没有出来')
+            print('有bug，房间结束弹窗没有出来')
 
     def teardown_class(self):
         # os.system("adb shell am force-stop com.dubmic.talk")

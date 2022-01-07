@@ -1,7 +1,7 @@
 from airtest.core.api import *
 import pytest,allure,os,random
 from poco.drivers.android.uiautomation import AndroidUiautomationPoco
-from tools.tool import REPORT_PATH,log
+from tools.tool import REPORT_PATH
 from commom.com import getScreenshots,upSwipe
 from faker import Faker
 from fabulous.color import *

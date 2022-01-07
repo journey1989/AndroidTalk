@@ -1,7 +1,7 @@
 from airtest.core.api import *
 import pytest, allure, random
 from poco.drivers.android.uiautomation import AndroidUiautomationPoco
-from tools.tool import REPORT_PATH, log
+from tools.tool import REPORT_PATH
 from commom.com import getScreenshots, rightSwipe, downSwipe
 from fabulous.color import *
 
@@ -28,7 +28,7 @@ class TestRank(object):
                 sleep(2)
                 getScreenshots('人气榜单%d' % i)  # 0 周   1月
         else:
-            log.debug('数据异常' + 'test_01')
+            print('数据异常' + 'test_01')
         poco(text='主播榜').click()
         for i in range(2):
             rightSwipe()

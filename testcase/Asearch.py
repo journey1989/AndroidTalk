@@ -1,7 +1,7 @@
 from airtest.core.api import *
 import pytest, allure, os
 from poco.drivers.android.uiautomation import AndroidUiautomationPoco
-from tools.tool import REPORT_PATH, log
+from tools.tool import REPORT_PATH
 from commom.com import getScreenshots, leftSwipe
 from fabulous.color import *
 
@@ -37,7 +37,7 @@ class TestSearch(object):
             sleep(2)
             poco('com.dubmic.talk:id/user_contract_bt')[0].click()
         else:
-            log.debug('数据异常' + 'test_02')
+            print('数据异常' + 'test_02')
 
     @allure.title('搜索界面左滑12次')
     def test_03(self):
